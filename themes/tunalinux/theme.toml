@@ -1,0 +1,10 @@
+name = 'tunalinux'
+license = "GLP3"
+licenselink = "https://github.com/tunalinux/tunalinux.org"
+description = "Tuna Linux theme"
+homepage = "https://tunalinux.org"
+min_version = "0.116.1"
+
+[author]
+name = 'Mulling'
+homepage = 'https://tunalinux.org'

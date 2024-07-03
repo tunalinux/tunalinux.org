@@ -1,0 +1,12 @@
+<div class="header-logo">
+    <a href="/">
+        <img src="/tunalinux.png" width="200rem"/>
+    </a>
+    <div>
+        <h1>{{ site.Title }}</h1>
+        <h4>All-static, no glibc.</h4>
+    </div>
+</div>
+<div class="header-menu">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
