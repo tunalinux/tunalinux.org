@@ -2,31 +2,29 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Tuna Linux'
 theme = 'tunalinux'
+sectionPagesMenu = "main"
 
 [menu]
 
 [[menu.main]]
-identifier = "news"
-name = "news"
-url = "/news/"
+name = "home"
+url = "/"
 weight = 1
 
 [[menu.main]]
-identifier = "packages"
-name = "packages"
-url = "/packages/"
+name = "news"
+url = "/news/"
 weight = 2
 
 [[menu.main]]
-identifier = "about"
-name = "about"
-url = "/about/"
+name = "packages"
+url = "/packages/"
 weight = 3
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+[[menu.main]]
+name = "about"
+url = "/about/"
+weight = 4
 
 # For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
