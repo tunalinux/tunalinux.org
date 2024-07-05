@@ -1,4 +1,94 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<style>
+@font-face {
+    font-family: 'Comic Code';
+    src:url("/fonts/Comic Code.otf");
+}
+
+* {
+    font-family: Comic Code;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-appearance: none;
+    min-width: 20rem;
+    max-width: 60rem;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 60rem) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+a:link    { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover   { text-decoration: none; }
+a:active  { text-decoration: none; }
+
+header > * {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: #B8E7EE;
+    color: #000;
+}
+
+* > a.active {
+    background-color: #000;
+    color: #FFF;
+}
+
+div.header-logo-title {
+    margin-left: 1rem;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.socials {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+</style>
