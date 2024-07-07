@@ -2,14 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
-<link rel="preload" as="image" href="/tunalinux.png">
+<link rel="preload" as="image" href="/tunalinux.webp">
 
 <style>
 @font-face {
     font-family: 'Comic Code';
     font-style: normal;
-    font-display: auto;
-    src: url("/fonts/Comic Code.otf");
+    font-display: swap;
+    src: url("/fonts/Comic Code.otf") format("opentype");
 }
 
 * {
